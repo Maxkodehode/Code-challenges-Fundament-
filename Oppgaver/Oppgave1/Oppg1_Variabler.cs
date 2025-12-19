@@ -1,7 +1,6 @@
 using Spectre.Console;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Code_challenges_Fundament_;
+namespace Code_challenges_Fundament_.Oppgaver.Oppgave1;
 
 public class Variabler
 {
@@ -26,5 +25,7 @@ public class Variabler
                 $"[grey]Type:[/][yellow]{typeName}[/], [grey]Value:[/][bold blue]{item}[/]"
             );
         }
+        AnsiConsole.MarkupLine("[green]Press Enter to return to menu...[/]");
+        Console.ReadLine();
     }
 }
