@@ -7,7 +7,6 @@ public class Collections
     private void PrintList<T>(string title, IEnumerable<T> collection, string color = "white")
     {
         AnsiConsole.MarkupLine($"[{color}]{title}:[/]");
-        // Join the items with a comma and print them in one line
         string joined = string.Join(", ", collection);
         AnsiConsole.MarkupLine($"  [white]{joined}[/]\n");
     }
@@ -47,8 +46,6 @@ public class Collections
             AnsiConsole.Clear();
             AnsiConsole.MarkupLine("[yellow]Oppgave 3: Collections[/]\n");
 
-            // 1. Print simple collections using our helper
-
             PrintList("Numbers Array", numbers, "bold fuchsia");
             PrintList("Decimals Array", decimals, "bold fuchsia");
             PrintList("Fast Foods Array", fastFoods, "bold fuchsia");
@@ -57,7 +54,6 @@ public class Collections
             PrintList("Decimals List", decimalsList, "bold orange3");
             PrintList("Fast Foods List", fastFoods, "bold orange3");
 
-            // 2. Print Dictionary in a compact Panel
             var grid = new Grid().AddColumn();
 
             foreach (var entry in names)

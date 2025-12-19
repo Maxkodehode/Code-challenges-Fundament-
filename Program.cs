@@ -22,7 +22,7 @@ class Program
             if (!string.IsNullOrEmpty(errorMessage))
             {
                 AnsiConsole.MarkupLine($"[red]Error: {errorMessage}[/]\n");
-                errorMessage = null; // Clear it so it only shows once
+                errorMessage = null;
             }
 
             var choice = AnsiConsole.Prompt(
